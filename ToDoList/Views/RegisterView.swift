@@ -24,7 +24,7 @@ struct RegisterView: View {
                     .textFieldStyle(DefaultTextFieldStyle())
                 TextField("Email ...", text:$email)
                     .textFieldStyle(DefaultTextFieldStyle())
-                TextField("Password ...", text:$password)
+                SecureField("Password ...", text:$password)
                     .textFieldStyle(DefaultTextFieldStyle())
                 
                 TLButton(title: "Register",

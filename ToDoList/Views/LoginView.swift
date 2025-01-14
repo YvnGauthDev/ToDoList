@@ -18,11 +18,14 @@ struct LoginView: View {
                            subtitle: "Get things done",
                            angle: 15,
                            background: .pink)
-                // Login Form
                 Form{
+                    if !viewModel.errorMessage.isEmpty{
+                        Text(viewModel.errorMessage)
+                           .foregroundColor(.red)
+                    }
                     TextField("Email ...", text:$viewModel.email)
                         .textFieldStyle(DefaultTextFieldStyle())
-                    TextField("Password ...", text:$viewModel.password)
+                    SecureField("Password ...", text:$viewModel.password)
                         .textFieldStyle(DefaultTextFieldStyle())
                     
                     // Button Login
