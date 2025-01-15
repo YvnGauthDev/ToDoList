@@ -1,18 +1,18 @@
 //
-//  ToDoList.swift
+//  ToDoListView.swift
 //  ToDoList
 //
-//  Created by Yvan Gauthier on 12/01/2025.
+//  Created by Yvan Gauthier on 15/01/2025.
 //
 
 import SwiftUI
 
-struct ToDoList: View {
+struct ToDoListView: View {
     var body: some View {
         Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
     }
 }
 
 #Preview {
-    ToDoList()
+    ToDoListView()
 }
