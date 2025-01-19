@@ -6,3 +6,9 @@
 //
 
 import Foundation
+
+/// ViewModel for single to do list item
+/// Primary lab 
+class ToDoListNewItemViewViewModel: ObservableObject {
+    init() {}
+}
